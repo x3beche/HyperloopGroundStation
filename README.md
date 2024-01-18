@@ -6,7 +6,7 @@ If you want to see it on action : [youtube](https://www.youtube.com/watch?v=dRox
 <div align="center">  
    <br>
    <br>
-  #GUI View
-  <img src="https://raw.githubusercontent.com/x3beche/HyperloopGroundStation/main/Screenshot%20from%202024-01-18%2021-33-46.png">
+  # GUI View
+  <img src="https://raw.githubusercontent.com/x3beche/HyperloopGroundStation/main/Screenshot%20from%202024-01-18%2021-33-46.png" width="600" title="GUI View">
   
 </div>
