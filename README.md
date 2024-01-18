@@ -4,8 +4,6 @@ If you want to see it on action : [youtube](https://www.youtube.com/watch?v=dRox
 
 <p>&nbsp;</p>
 <div align="center">  
-   <br>
-   <br>
-  <img src="https://raw.githubusercontent.com/x3beche/HyperloopGroundStation/main/Screenshot%20from%202024-01-18%2021-33-46.png" width="900" title="GUI View">
+  <img src="https://raw.githubusercontent.com/x3beche/HyperloopGroundStation/main/Screenshot%20from%202024-01-18%2021-33-46.png" width="1200" title="GUI View">
   
 </div>
