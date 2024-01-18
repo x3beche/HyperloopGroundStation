@@ -1,0 +1,6 @@
+opencv_python==4.5.4.60
+pafy==0.5.5
+PyQt6==6.3.1
+pyqtgraph==0.12.4
+pyserial==3.5
+PyYAML==6.0

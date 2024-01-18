@@ -1,0 +1,7912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1921</width>
+    <height>1453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Momentum Hyperloop - Arayüz</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*Copyright (c) DevSec Studio. All rights reserved.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+/*-----QWidget-----*/
+QWidget
+{
+	background-color: #3a3a3a;
+	color: #fff;
+	selection-background-color: #b78620;
+	selection-color: #000;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: #fff;
+
+}
+
+
+/*-----QMenuBar-----*/
+QMenuBar 
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(57, 57, 57, 255),stop:1 rgba(50, 50, 50, 255));
+	border: 1px solid #000;
+	color: #fff;
+
+}
+
+
+QMenuBar::item 
+{
+	background-color: transparent;
+
+}
+
+
+QMenuBar::item:selected 
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+	color: #fff;
+
+}
+
+
+QMenuBar::item:pressed 
+{
+	background-color: rgb(183, 134, 32);
+	border: 1px solid #b78620;
+	color: #fff;
+
+}
+
+
+/*-----QMenu-----*/
+QMenu
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(57, 57, 57, 255),stop:1 rgba(50, 50, 50, 255));
+    border: 1px solid #222;
+    padding: 4px;
+	color: #fff;
+
+}
+
+
+QMenu::item
+{
+    background-color: transparent;
+    padding: 2px 20px 2px 20px;
+
+}
+
+
+QMenu::separator
+{
+   	background-color: rgb(183, 134, 32);
+	height: 1px;
+
+}
+
+
+QMenu::item:disabled
+{
+    color: #555;
+    background-color: transparent;
+    padding: 2px 20px 2px 20px;
+
+}
+
+
+QMenu::item:selected
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+	color: #fff;
+
+}
+
+
+/*-----QToolBar-----*/
+QToolBar
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(69, 69, 69, 255),stop:1 rgba(58, 58, 58, 255));
+	border-top: none;
+	border-bottom: 1px solid #4f4f4f;
+	border-left: 1px solid #4f4f4f;
+	border-right: 1px solid #4f4f4f;
+
+}
+
+
+QToolBar::separator
+{
+	background-color: #2e2e2e;
+	width: 1px;
+
+}
+
+
+/*-----QToolButton-----*/
+QToolButton 
+{
+	background-color: transparent;
+	color: #fff;
+	padding: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 1px;
+}
+
+
+QToolButton:hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+	color: #fff;
+	
+}
+
+
+QToolButton:pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(57, 57, 57, 255),stop:1 rgba(50, 50, 50, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QToolButton:checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(57, 57, 57, 255),stop:1 rgba(50, 50, 50, 255));
+	border: 1px solid #222;
+}
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+
+
+/*-----QLineEdit-----*/
+QLineEdit
+{
+	background-color: #131313;
+	color : #eee;
+	border: 1px solid #343434;
+	border-radius: 2px;
+	padding: 3px;
+	padding-left: 5px;
+
+}
+
+
+/*-----QPlainTExtEdit-----*/
+QPlainTextEdit
+{
+	background-color: #131313;
+	color : #eee;
+	border: 1px solid #343434;
+	border-radius: 2px;
+	padding: 3px;
+	padding-left: 5px;
+
+}
+
+
+/*-----QTabBar-----*/
+QTabBar::tab
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #666;
+	border-bottom: none;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+
+QTabWidget::pane 
+{
+	background-color: red;
+	border: 1px solid #666;
+	top: 1px;
+
+}
+
+
+QTabBar::tab:last
+{
+	margin-right: 0; 
+
+}
+
+
+QTabBar::tab:first:!selected
+{
+	background-color: #0c0c0d;
+	margin-left: 0px;
+
+}
+
+
+QTabBar::tab:!selected
+{
+	color: #b1b1b1;
+	border-bottom-style: solid;
+	background-color: #0c0c0d;
+
+}
+
+
+QTabBar::tab:selected
+{
+	margin-bottom: 0px;
+
+}
+
+
+QTabBar::tab:!selected:hover
+{
+	border-top-color: #b78620;
+
+}
+
+
+/*-----QComboBox-----*/
+QComboBox
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+    border: 1px solid #000;
+    padding-left: 6px;
+    color: #ffffff;
+    height: 20px;
+
+}
+
+
+QComboBox::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QComboBox:on
+{
+    background-color: #b78620;
+	color: #000;
+
+}
+
+
+QComboBox QAbstractItemView
+{
+    background-color: #383838;
+    color: #ffffff;
+    border: 1px solid black;
+    selection-background-color: #b78620;
+    outline: 0;
+
+}
+
+
+QComboBox::drop-down
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(57, 57, 57, 255),stop:1 rgba(50, 50, 50, 255));
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: black;
+    border-left-style: solid; 
+
+}
+
+
+QComboBox::down-arrow
+{
+    image: url(://arrow-down.png);
+    width: 8px;
+    height: 8px;
+}
+
+
+/*-----QSpinBox &amp; QDateTimeEdit-----*/
+QSpinBox,
+QDateTimeEdit 
+{
+    background-color: #131313;
+	color : #eee;
+	border: 1px solid #343434;
+	padding: 3px;
+	padding-left: 5px;
+    border-radius : 2px;
+
+}
+
+
+QSpinBox::up-button, 
+QDateTimeEdit::up-button
+{
+	border-top-right-radius:2px;
+	background-color: #777777;
+    width: 16px; 
+    border-width: 1px;
+
+}
+
+
+QSpinBox::up-button:hover, 
+QDateTimeEdit::up-button:hover
+{
+	background-color: #585858;
+
+}
+
+
+QSpinBox::up-button:pressed, 
+QDateTimeEdit::up-button:pressed
+{
+	background-color: #252525;
+    width: 16px; 
+    border-width: 1px;
+
+}
+
+
+QSpinBox::up-arrow,
+QDateTimeEdit::up-arrow
+{
+    image: url(://arrow-up.png);
+    width: 7px;
+    height: 7px;
+
+}
+
+
+QSpinBox::down-button, 
+QDateTimeEdit::down-button
+{
+	border-bottom-right-radius:2px;
+	background-color: #777777;
+    width: 16px; 
+    border-width: 1px;
+
+}
+
+
+QSpinBox::down-button:hover, 
+QDateTimeEdit::down-button:hover
+{
+	background-color: #585858;
+
+}
+
+
+QSpinBox::down-button:pressed, 
+QDateTimeEdit::down-button:pressed
+{
+	background-color: #252525;
+    width: 16px; 
+    border-width: 1px;
+
+}
+
+
+QSpinBox::down-arrow,
+QDateTimeEdit::down-arrow
+{
+    image: url(://arrow-down.png);
+    width: 7px;
+    height: 7px;
+
+}
+
+
+/*-----QGroupBox-----*/
+QGroupBox 
+{
+    border: 1px solid;
+    border-color: #666666;
+	border-radius: 5px;
+    margin-top: 20px;
+
+}
+
+
+QGroupBox::title  
+{
+    background-color: transparent;
+    color: #eee;
+    subcontrol-origin: margin;
+    padding: 5px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+
+}
+
+
+/*-----QHeaderView-----*/
+QHeaderView::section
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(60, 60, 60, 255),stop:1 rgba(50, 50, 50, 255));
+	border: 1px solid #000;
+    color: #fff;
+    text-align: left;
+	padding: 4px;
+	
+}
+
+
+QHeaderView::section:disabled
+{
+    background-color: #525251;
+    color: #656565;
+
+}
+
+
+QHeaderView::section:checked
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(60, 60, 60, 255),stop:1 rgba(50, 50, 50, 255));
+    color: #fff;
+
+}
+
+
+QHeaderView::section::vertical::first,
+QHeaderView::section::vertical::only-one
+{
+    border-top: 1px solid #353635;
+
+}
+
+
+QHeaderView::section::vertical
+{
+    border-top: 1px solid #353635;
+
+}
+
+
+QHeaderView::section::horizontal::first,
+QHeaderView::section::horizontal::only-one
+{
+    border-left: 1px solid #353635;
+
+}
+
+
+QHeaderView::section::horizontal
+{
+    border-left: 1px solid #353635;
+
+}
+
+
+QTableCornerButton::section
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(60, 60, 60, 255),stop:1 rgba(50, 50, 50, 255));
+	border: 1px solid #000;
+    color: #fff;
+
+}
+
+
+/*-----QTreeWidget-----*/
+QTreeView
+{
+	show-decoration-selected: 1;
+	alternate-background-color: #3a3a3a;
+	selection-color: #fff;
+	background-color: #2d2d2d;
+	border: 1px solid gray;
+	padding-top : 5px;
+	color: #fff;
+	font: 8pt;
+
+}
+
+
+QTreeView::item:selected
+{
+	color:#fff;
+	background-color: #b78620;
+	border-radius: 0px;
+
+}
+
+
+QTreeView::item:!selected:hover
+{
+    background-color: #262626;
+    border: none;
+    color: white;
+
+}
+
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings 
+{
+	image: url(://tree-closed.png);
+
+}
+
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  
+{
+	image: url(://tree-open.png);
+
+}
+
+
+/*-----QListView-----*/
+QListView 
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(83, 83, 83, 255),stop:0.293269 rgba(81, 81, 81, 255),stop:0.634615 rgba(79, 79, 79, 255),stop:1 rgba(83, 83, 83, 255));
+    border : none;
+    color: white;
+    show-decoration-selected: 1; 
+    outline: 0;
+	border: 1px solid gray;
+
+}
+
+
+QListView::disabled 
+{
+	background-color: #656565;
+	color: #1b1b1b;
+    border: 1px solid #656565;
+
+}
+
+
+QListView::item 
+{
+	background-color: #2d2d2d;
+    padding: 1px;
+
+}
+
+
+QListView::item:alternate 
+{
+    background-color: #3a3a3a;
+
+}
+
+
+QListView::item:selected 
+{
+	background-color: #b78620;
+	border: 1px solid #b78620;
+	color: #fff;
+
+}
+
+
+QListView::item:selected:!active 
+{
+	background-color: #b78620;
+	border: 1px solid #b78620;
+	color: #fff;
+
+}
+
+
+QListView::item:selected:active 
+{
+	background-color: #b78620;
+	border: 1px solid #b78620;
+	color: #fff;
+
+}
+
+
+QListView::item:hover {
+    background-color: #262626;
+    border: none;
+    color: white;
+
+}
+
+
+/*-----QCheckBox-----*/
+QCheckBox
+{
+	background-color: transparent;
+    color: lightgray;
+	border: none;
+
+}
+
+
+QCheckBox::indicator
+{
+    background-color: #323232;
+    border: 1px solid darkgray;
+    width: 12px;
+    height: 12px;
+
+}
+
+
+QCheckBox::indicator:checked
+{
+    image:url(&quot;./ressources/check.png&quot;);
+	background-color: #b78620;
+    border: 1px solid #3a546e;
+
+}
+
+
+QCheckBox::indicator:unchecked:hover
+{
+	border: 1px solid #b78620; 
+
+}
+
+
+QCheckBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QCheckBox::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 1px solid #656565;
+
+}
+
+
+/*-----QRadioButton-----*/
+QRadioButton 
+{
+	color: lightgray;
+	background-color: transparent;
+
+}
+
+
+QRadioButton::indicator::unchecked:hover 
+{
+	background-color: lightgray;
+	border: 2px solid #b78620;
+	border-radius: 6px;
+}
+
+
+QRadioButton::indicator::checked 
+{
+	border: 2px solid #b78620;
+	border-radius: 6px;
+	background-color: rgba(183,134,32,20%);  
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+/*-----QSlider-----*/
+QSlider::groove:horizontal 
+{
+	background-color: transparent;
+	height: 3px;
+
+}
+
+
+QSlider::sub-page:horizontal 
+{
+	background-color: #b78620;
+
+}
+
+
+QSlider::add-page:horizontal 
+{
+	background-color: #131313;
+
+}
+
+
+QSlider::handle:horizontal 
+{
+	background-color: #b78620;
+	width: 14px;
+	margin-top: -6px;
+	margin-bottom: -6px;
+	border-radius: 6px;
+
+}
+
+
+QSlider::handle:horizontal:hover 
+{
+	background-color: #d89e25;
+	border-radius: 6px;
+
+}
+
+
+QSlider::sub-page:horizontal:disabled 
+{
+	background-color: #bbb;
+	border-color: #999;
+
+}
+
+
+QSlider::add-page:horizontal:disabled 
+{
+	background-color: #eee;
+	border-color: #999;
+
+}
+
+
+QSlider::handle:horizontal:disabled 
+{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+
+}
+
+
+/*-----QScrollBar-----*/
+QScrollBar:horizontal
+{
+    border: 1px solid #222222;
+    background-color: #3d3d3d;
+    height: 15px;
+    margin: 0px 16px 0 16px;
+
+}
+
+
+QScrollBar::handle:horizontal
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(97, 97, 97, 255),stop:1 rgba(90, 90, 90, 255));
+	border: 1px solid #2d2d2d;
+    min-height: 20px;
+
+}
+
+
+QScrollBar::add-line:horizontal
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(97, 97, 97, 255),stop:1 rgba(90, 90, 90, 255));
+	border: 1px solid #2d2d2d;
+    width: 15px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+
+}
+
+
+QScrollBar::sub-line:horizontal
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(97, 97, 97, 255),stop:1 rgba(90, 90, 90, 255));
+	border: 1px solid #2d2d2d;
+    width: 15px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+
+}
+
+
+QScrollBar::right-arrow:horizontal
+{
+    image: url(://arrow-right.png);
+    width: 6px;
+    height: 6px;
+
+}
+
+
+QScrollBar::left-arrow:horizontal
+{
+    image: url(://arrow-left.png);
+    width: 6px;
+    height: 6px;
+
+}
+
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+    background: none;
+
+}
+
+
+QScrollBar:vertical
+{
+    background-color: #3d3d3d;
+    width: 16px;
+	border: 1px solid #2d2d2d;
+    margin: 16px 0px 16px 0px;
+
+}
+
+
+QScrollBar::handle:vertical
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(97, 97, 97, 255),stop:1 rgba(90, 90, 90, 255));
+	border: 1px solid #2d2d2d;
+    min-height: 20px;
+
+}
+
+
+QScrollBar::add-line:vertical
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(97, 97, 97, 255),stop:1 rgba(90, 90, 90, 255));
+	border: 1px solid #2d2d2d;
+    height: 15px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+
+}
+
+
+QScrollBar::sub-line:vertical
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(97, 97, 97, 255),stop:1 rgba(90, 90, 90, 255));
+	border: 1px solid #2d2d2d;
+    height: 15px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+
+}
+
+
+QScrollBar::up-arrow:vertical
+{
+    image: url(://arrow-up.png);
+    width: 6px;
+    height: 6px;
+
+}
+
+
+QScrollBar::down-arrow:vertical
+{
+    image: url(://arrow-down.png);
+    width: 6px;
+    height: 6px;
+
+}
+
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+{
+    background: none;
+
+}
+
+
+/*-----QProgressBar-----*/
+QProgressBar
+{
+    border: 1px solid #666666;
+    text-align: center;
+	color: #000;
+	font-weight: bold;
+
+}
+
+
+QProgressBar::chunk
+{
+    background-color: #b78620;
+    width: 30px;
+    margin: 0.5px;
+
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="monitorize">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>0</y>
+      <width>461</width>
+      <height>861</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="kapsul_durumu">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>421</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 30pt;
+	font-weight: bold;
+	background-color: #092215;
+	color: #00e640;
+ border-radius: 10px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>Kalkış Öncesi</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="kapsul_durumu_title">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Kapsül Durumu :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sure">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>421</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: #092215;
+	color: #00e640;
+border-radius: 10px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>00.00000 / 30.00000</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sure_title">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Süre</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="levitasyon">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>290</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: #380000;
+	color: #ff2400;
+border-radius: 10px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>Kapalı</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fren">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>290</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{font-family: Arial;font-style: normal;font-size: 20pt;font-weight: bold;background-color: #380000;color: #ff2400;border-radius: 10px;}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>Kapalı</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="asama">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>290</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{font-family: Arial;font-style: normal;font-size: 20pt;font-weight: bold;background-color: #092215;color: #00e640;border-radius: 10px;}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="levitasyon_title">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>260</y>
+       <width>181</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Levitasyon :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="asama_title">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>260</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Aşama :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fren_title">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>260</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+     </property>
+     <property name="text">
+      <string>Fren :</string>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="monitorize_tab">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>560</y>
+       <width>461</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="terminal_tab">
+      <attribute name="title">
+       <string>Terminal</string>
+      </attribute>
+      <widget class="QTextEdit" name="terminal">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>5</y>
+         <width>451</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="graphs_tab">
+      <attribute name="title">
+       <string>Bug Fix</string>
+      </attribute>
+      <widget class="QTextEdit" name="bugfix_terminal">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>5</y>
+         <width>451</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="acil_durdurma">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*-----QPushButton-----*/
+
+
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:0.486, y1:0, x2:0.505, y2:1, stop:0.00480769 rgba(170, 0, 0, 255),stop:1 rgba(122, 0, 0, 255));
+	color: #ffffff;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+font-family: Arial;font-style: normal;font-size: 18pt;font-weight: bold;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #9c0000;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #880000;
+	color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 3px;
+	border-color: #000000;
+	padding: 5px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Acil Durdurma</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="kontrol">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>731</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="kontrol_arayuzu_tab">
+     <attribute name="title">
+      <string>Kontrol Arayüzü</string>
+     </attribute>
+     <widget class="QGroupBox" name="sensorler">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>711</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="motor_akimi_title">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>100</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Motor Akımı</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="batarya_volt_title">
+       <property name="geometry">
+        <rect>
+         <x>28</x>
+         <y>336</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Batarya (V)  :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fren_akimi_title">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>260</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Fren Akımı</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="levitasyon_akimi_title">
+       <property name="geometry">
+        <rect>
+         <x>258</x>
+         <y>176</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Levitasyon Akımı</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="reflektor_sayaci_title">
+       <property name="geometry">
+        <rect>
+         <x>28</x>
+         <y>260</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Reflektör Sayacı</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fren_basinci_title">
+       <property name="geometry">
+        <rect>
+         <x>258</x>
+         <y>336</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Fren Basıncı (Pa)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ivme_title">
+       <property name="geometry">
+        <rect>
+         <x>28</x>
+         <y>176</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>İvme (m/s²)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="kapsul_basinci_title">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>420</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Kapsül Pasıncı (Pa)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="batarya_akimi_title">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>420</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Batarya (A) :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="sensor_verileri_title">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>311</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 23pt;
+	font-weight: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Sensör Verileri :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="batarya_sicaklik_title">
+       <property name="geometry">
+        <rect>
+         <x>488</x>
+         <y>176</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Batarya (*C)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="kapsul_sicaklik_title">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>260</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Kapsül (*C)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="esc_sicaklik_title">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>420</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>ESC (*C)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fren_sicaklik_title">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>100</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Fren (*C)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bms_sicaklik_title">
+       <property name="geometry">
+        <rect>
+         <x>488</x>
+         <y>336</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>BMS (*C)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fren_sicaklik_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>487</x>
+         <y>127</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z9">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>627</x>
+         <y>127</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="fren_sicaklik_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>130</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="batarya_sicaklik_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>210</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z10">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>627</x>
+         <y>207</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="batarya_sicaklik_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>487</x>
+         <y>207</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="kapsul_sicaklik_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>290</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="kapsul_sicaklik_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>487</x>
+         <y>287</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z8">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>627</x>
+         <y>287</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="bms_sicaklik_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>364</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="bms_sicaklik_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>487</x>
+         <y>361</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z11">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>627</x>
+         <y>361</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="esc_sicaklik_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>450</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="esc_sicaklik_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>487</x>
+         <y>447</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z12">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>627</x>
+         <y>447</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="motor_akimi_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>130</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z13">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>397</x>
+         <y>127</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="motor_akimi_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>257</x>
+         <y>127</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="levitasyon_akimi_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>210</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z14">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>397</x>
+         <y>207</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="levitasyon_akimi_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>257</x>
+         <y>207</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="fren_akimi_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>290</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fren_akimi_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>257</x>
+         <y>287</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z15">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>397</x>
+         <y>287</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="fren_basinci_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>364</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z3">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>397</x>
+         <y>361</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="fren_basinci_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>257</x>
+         <y>361</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="kapsul_basinci_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>450</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="kapsul_basinci_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>257</x>
+         <y>447</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z4">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>397</x>
+         <y>447</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="hiz_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>130</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z1">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>167</x>
+         <y>127</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="hiz_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>27</x>
+         <y>127</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ivme_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>27</x>
+         <y>207</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z2">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>167</x>
+         <y>207</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="ivme_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>210</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="reflektor_sayaci_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>27</x>
+         <y>287</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z5">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>167</x>
+         <y>287</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="reflektor_sayaci_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>290</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="batarya_akimi_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>27</x>
+         <y>447</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z0">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>167</x>
+         <y>447</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="batarya_akimi_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>450</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="PlotWidget" name="batarya_volt_plot">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>364</y>
+         <width>45</width>
+         <height>35</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z7">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>167</x>
+         <y>361</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="batarya_volt_text">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>27</x>
+         <y>361</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>419</x>
+        <y>-11</y>
+        <width>301</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QSlider-----*/
+QSlider::groove:horizontal 
+{
+	background-color: transparent;
+	height: 3px;
+
+}
+
+
+QSlider::sub-page:horizontal 
+{
+	background-color: #b78620;
+
+}
+
+
+QSlider::add-page:horizontal 
+{
+	background-color: #131313;
+
+}
+
+
+QSlider::handle:horizontal 
+{
+	background-color: #b78620;
+	width: 14px;
+	margin-top: -6px;
+	margin-bottom: -6px;
+	border-radius: 6px;
+
+}
+
+
+QSlider::handle:horizontal:hover 
+{
+	background-color: #d89e25;
+	border-radius: 6px;
+
+}
+
+
+QSlider::sub-page:horizontal:disabled 
+{
+	background-color: #bbb;
+	border-color: #999;
+
+}
+
+
+QSlider::add-page:horizontal:disabled 
+{
+	background-color: #eee;
+	border-color: #999;
+
+}
+
+
+QSlider::handle:horizontal:disabled 
+{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QSlider" name="lvtsyn_slider">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>70</y>
+         <width>22</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::handle:vertical 
+{
+	background-color: #404040;
+	border: 1px solid #000;
+	height: 12px;
+	margin-left: -6px;
+	margin-right: -6px;
+
+}</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="motor_slider">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>22</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::handle:vertical 
+{
+	background-color: #404040;
+	border: 1px solid #000;
+	height: 12px;
+	margin-left: -6px;
+	margin-right: -6px;
+
+}</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="brake_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>70</y>
+         <width>22</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::handle:vertical 
+{
+	background-color: #404040;
+	border: 1px solid #000;
+	height: 12px;
+	margin-left: -6px;
+	margin-right: -6px;
+
+}</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLCDNumber" name="motor_slider_lcd">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="digitCount">
+        <number>3</number>
+       </property>
+       <property name="intValue" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLCDNumber" name="lvtsyn_slider_lcd">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="digitCount">
+        <number>3</number>
+       </property>
+       <property name="intValue" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLCDNumber" name="brake_slider_lcd">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>30</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="digitCount">
+        <number>3</number>
+       </property>
+       <property name="intValue" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QSlider" name="light_slider">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>70</y>
+         <width>22</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::handle:vertical 
+{
+	background-color: #404040;
+	border: 1px solid #000;
+	height: 12px;
+	margin-left: -6px;
+	margin-right: -6px;
+
+}</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLCDNumber" name="light_slider_lcd">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>30</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="digitCount">
+        <number>3</number>
+       </property>
+       <property name="intValue" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>54</x>
+         <y>21</y>
+         <width>16</width>
+         <height>199</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>21</y>
+         <width>16</width>
+         <height>199</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>174</x>
+         <y>21</y>
+         <width>16</width>
+         <height>199</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="motor_slider_text">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>MOTOR</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lvtsyn_slider_text">
+       <property name="geometry">
+        <rect>
+         <x>72</x>
+         <y>190</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LVTSYN</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="brake_slider_text">
+       <property name="geometry">
+        <rect>
+         <x>133</x>
+         <y>190</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>BRAKE</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="light_slider_text">
+       <property name="geometry">
+        <rect>
+         <x>195</x>
+         <y>190</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LIGHT</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>231</x>
+         <y>21</y>
+         <width>16</width>
+         <height>199</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="light_slider_text_2">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>190</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ESC</string>
+       </property>
+      </widget>
+      <widget class="QLCDNumber" name="light_slider_lcd_2">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="digitCount">
+        <number>3</number>
+       </property>
+       <property name="intValue" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QSlider" name="light_slider_2">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>22</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::handle:vertical 
+{
+	background-color: #404040;
+	border: 1px solid #000;
+	height: 12px;
+	margin-left: -6px;
+	margin-right: -6px;
+
+}</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <zorder>lvtsyn_slider</zorder>
+      <zorder>motor_slider</zorder>
+      <zorder>brake_slider</zorder>
+      <zorder>light_slider</zorder>
+      <zorder>line</zorder>
+      <zorder>motor_slider_lcd</zorder>
+      <zorder>line_2</zorder>
+      <zorder>line_3</zorder>
+      <zorder>light_slider_lcd</zorder>
+      <zorder>lvtsyn_slider_lcd</zorder>
+      <zorder>brake_slider_lcd</zorder>
+      <zorder>motor_slider_text</zorder>
+      <zorder>lvtsyn_slider_text</zorder>
+      <zorder>brake_slider_text</zorder>
+      <zorder>light_slider_text</zorder>
+      <zorder>line_4</zorder>
+      <zorder>light_slider_text_2</zorder>
+      <zorder>light_slider_lcd_2</zorder>
+      <zorder>light_slider_2</zorder>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>-10</y>
+        <width>211</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="gorev_kontrolcusu_geri_button">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>85</y>
+         <width>92</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;kalkis_oncesi_buton_6&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;10&lt;/x&gt;
+     &lt;y&gt;165&lt;/y&gt;
+     &lt;width&gt;161&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Simulasyon&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="gorev_kontrolcusu_ileri_button">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>85</y>
+         <width>92</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;kalkis_oncesi_buton_6&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;10&lt;/x&gt;
+     &lt;y&gt;165&lt;/y&gt;
+     &lt;width&gt;161&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Simulasyon&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+       </property>
+       <property name="text">
+        <string>&gt;</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="kalkis_oncesi_buton_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>125</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;kalkis_oncesi_buton_6&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;10&lt;/x&gt;
+     &lt;y&gt;165&lt;/y&gt;
+     &lt;width&gt;161&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Simulasyon&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+       </property>
+       <property name="text">
+        <string>Görev İptal</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="sensor_verileri_title_26">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>35</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 15pt;
+	font-weight: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Görev Kontrolcüsü</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="kalkis_oncesi_buton_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>165</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;kalkis_oncesi_buton_6&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;10&lt;/x&gt;
+     &lt;y&gt;165&lt;/y&gt;
+     &lt;width&gt;161&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Simulasyon&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+       </property>
+       <property name="text">
+        <string>Görev Başlat</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>-10</y>
+        <width>181</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="kalkis_oncesi_buton_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>85</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Serbest</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="kalkis_oncesi_buton_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>125</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Görev</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="simulasyon">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>165</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Simulasyon</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="sensor_verileri_title_27">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>35</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 15pt;
+	font-weight: bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Kontrol Modları</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="baglanti_tab">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Bağlantı</string>
+     </attribute>
+     <widget class="QGroupBox" name="baglanti_kodlari">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>691</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="imu_responder_title">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>IMU Responder :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="imu_responder">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>80</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>getIMUSensors</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="latency_responder_title">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Latenct Responder :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="latency_responder">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>40</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>getLatency</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="esc_control">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>80</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>setESC</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="light_control">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>40</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>setLightning</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="esc_control_title">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>80</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ESC Control</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="light_control_title">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>40</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Light Control :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="power_responder">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>160</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>getPowerSensors</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="reflector_responder">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>120</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>getReflectorSensors</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="power_responder_title">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Power Responder :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="brake_control">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>160</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>setBrake</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="levitation_control_title">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>120</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Levitation Control :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="brake_control_title">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>160</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Brake Control :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="levitation_control">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>120</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>setLevitation</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="reflector_responder_title">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reflector Responder :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="temprature_responder">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>240</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>getTemperatureSensors</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="pressure_responder">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>200</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>getPressureSensors</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="temprature_responder_title">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>240</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Temperature Responder :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cam2_control">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>240</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>setCam2Status</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cam1_control_title">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>200</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cam 1 :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cam2_control_title">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>240</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cam 2 :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cam1_control">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>200</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>setCam1Status</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pressure_responder_title">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Pressure Responder</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="light_control_values">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>40</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>[0,5]</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="esc_control_values">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>80</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>[0,1024]</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="levitation_control_values">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>120</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>[0,512]</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="brake_control_values">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>160</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>[0,512]</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cam1_control_values">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>200</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>[0,1]</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cam2_control_values">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>240</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>[0,1]</string>
+       </property>
+      </widget>
+      <widget class="Line" name="z_line0_v">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>40</y>
+         <width>20</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="baglanti_kilit_kaldirma">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>400</y>
+         <width>311</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Kilit Kaldırma</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="baglanti_save">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>400</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="baglanti_edit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>400</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Edit</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="authentication">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>360</y>
+         <width>521</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>4ffaae16522e5809c098d15c4d6d18aa3f15285135f366a50f20040d92496</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="logging_identity_title">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>320</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Logging Idendity :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="authentication_title">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>360</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Authentication :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="disconnect_message">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>280</y>
+         <width>521</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>zb4ff9e42861a14c8860d97c8d003174a3649c2ea2d524c3e068778d05073</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="disconnect_message_title">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>280</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Disconnect Message :</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="logging_identity">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>320</y>
+         <width>521</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>6c6ea79b4949f6cdf4c0e7a13072b0ee2d1d8a65c71dfa50351a8461ed673</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="baglanti_kontrol">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>421</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="baglan">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>381</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Bağlan</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="port">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>170</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="port_title">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>170</y>
+         <width>49</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Port :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="adres_title">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>49</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Adres : </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="adres">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>170</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="baglantiyi_kes">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Bağlantıyı Kes</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="yenile">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Yenile</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="latency">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>210</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0ms</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="latency_title">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>210</y>
+         <width>49</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Latency :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_47">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>210</y>
+         <width>49</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>User : </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="user">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>210</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="kapsul_kamera_button">
+       <property name="geometry">
+        <rect>
+         <x>309</x>
+         <y>90</y>
+         <width>92</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="aem_kamera_button">
+       <property name="geometry">
+        <rect>
+         <x>309</x>
+         <y>130</y>
+         <width>92</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="kapsul_kamera_title">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>90</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Kapsül Kamera :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="aem_kamera_title">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>130</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>AEM Kamera :</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="baglanti_diagram">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>0</y>
+        <width>261</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="router_and_ground_station">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #092215;
+	color: #00e640;
+border-radius: 7px;
+}
+
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>✓</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::PlainText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z_ok0_h">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>140</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>files/img/horizantal_arrow.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z_ok1_v">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>70</y>
+         <width>21</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>files/img/vertical_arrow.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z_ok2_v">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>160</y>
+         <width>21</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>files/img/vertical_arrow.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="z_ok3_h">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>50</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>files/img/horizantal_arrow.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="diagram_stm32_title">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>230</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>STM32</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="diagram_capsule_title">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>CAPSULE</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="diagram_cams_title">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>130</y>
+         <width>41</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CAM1&lt;/p&gt;&lt;p&gt;CAM2&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="diagram_router_title">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>ROUTER</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="router_and_capsule">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #380000;
+	color: #ff2400;
+border-radius: 7px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::PlainText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="capsule_and_cam1">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>125</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #380000;
+	color: #ff2400;
+border-radius: 7px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::PlainText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="capsule_and_cam2">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>155</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #380000;
+	color: #ff2400;
+border-radius: 7px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::PlainText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="capsule_and_stm32">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>190</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #380000;
+	color: #ff2400;
+border-radius: 7px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::PlainText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="diagram_ground_station_title">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>40</y>
+         <width>61</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: transparent;
+	color: #fff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;GROUND&lt;/p&gt;&lt;p&gt;STATION&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <zorder>z_ok0_h</zorder>
+      <zorder>z_ok1_v</zorder>
+      <zorder>z_ok2_v</zorder>
+      <zorder>z_ok3_h</zorder>
+      <zorder>router_and_ground_station</zorder>
+      <zorder>diagram_stm32_title</zorder>
+      <zorder>diagram_capsule_title</zorder>
+      <zorder>diagram_cams_title</zorder>
+      <zorder>diagram_router_title</zorder>
+      <zorder>router_and_capsule</zorder>
+      <zorder>capsule_and_cam1</zorder>
+      <zorder>capsule_and_cam2</zorder>
+      <zorder>capsule_and_stm32</zorder>
+      <zorder>diagram_ground_station_title</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="reflektor_tab">
+     <attribute name="title">
+      <string>Reflektör Verileri</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="bufferInfoBox">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>0</y>
+      <width>141</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLineEdit" name="rx_buffer">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>35</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="tx_buffer">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="rx_buffe_title">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>49</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>  RX</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tx_buffer_title">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>55</y>
+       <width>49</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>  TX</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="latencyArayuz">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>85</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="latencyArayuzTitle">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>49</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>  MS</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="bufferInfoBox_2">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>0</y>
+      <width>261</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="baglantiyiKesArayuz">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>75</y>
+       <width>92</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Bağlantıyı Kes</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="part_title_arayuz">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>35</y>
+       <width>49</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Port :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="adres_arayuz">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>75</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="adres_title_arayuz">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>75</y>
+       <width>49</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Adres : </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="baglanArayuz">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>35</y>
+       <width>92</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Bağlan</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="port_arayuz">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>35</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="kamera_monitorize">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>20</y>
+      <width>671</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="kapsul_kamera_tab">
+     <attribute name="title">
+      <string>Kapsül Kamerası</string>
+     </attribute>
+     <widget class="QLabel" name="kapsul_kamera_label">
+      <property name="geometry">
+       <rect>
+        <x>-2</x>
+        <y>0</y>
+        <width>673</width>
+        <height>503</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #fff;
+	border-radius: 10px;
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>files/img/kapsul.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="aem_kamera_tab">
+     <attribute name="title">
+      <string>AEM Kamerası</string>
+     </attribute>
+     <widget class="QLabel" name="aem_kamera_label">
+      <property name="geometry">
+       <rect>
+        <x>-2</x>
+        <y>0</y>
+        <width>673</width>
+        <height>503</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #fff;
+	border-radius: 10px;
+}
+
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>files/img/aem.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="kapsulKonumBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>860</y>
+      <width>1881</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*-----QSlider-----*/
+QSlider::groove:horizontal 
+{
+	background-color: transparent;
+	height: 3px;
+
+}
+
+
+QSlider::sub-page:horizontal 
+{
+	background-color: #b78620;
+
+}
+
+
+QSlider::add-page:horizontal 
+{
+	background-color: #131313;
+
+}
+
+
+QSlider::handle:horizontal 
+{
+	background-color: #b78620;
+	width: 70px;
+	margin-top: -12px;
+	margin-bottom: -12px;
+	border-radius: 12px;
+
+}
+
+
+QSlider::handle:horizontal:hover 
+{
+	background-color: #d89e25;
+	border-radius: 6px;
+
+}
+
+
+QSlider::sub-page:horizontal:disabled 
+{
+	background-color: #bbb;
+	border-color: #999;
+
+}
+
+
+QSlider::add-page:horizontal:disabled 
+{
+	background-color: #eee;
+	border-color: #999;
+
+}
+
+
+QSlider::handle:horizontal:disabled 
+{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QSlider" name="kapsulKonum">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>1821</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*-----QSlider-----*/
+QSlider::groove:horizontal 
+{
+	background-color: transparent;
+	height: 3px;
+
+}
+
+
+QSlider::sub-page:horizontal 
+{
+	background-color: #999999;
+
+}
+
+
+QSlider::add-page:horizontal 
+{
+	background-color: #131313;
+
+}
+
+
+QSlider::handle:horizontal 
+{
+	background-color: #bfbfbf;
+	width: 70px;
+	margin-top: -12px;
+	margin-bottom: -12px;
+	border-radius: 12px;
+
+}
+
+
+QSlider::handle:horizontal:hover 
+{
+	background-color: #bfbfbf;
+	width: 70px;
+	margin-top: -12px;
+	margin-bottom: -12px;
+	border-radius: 12px;
+
+}
+
+
+QSlider::sub-page:horizontal:disabled 
+{
+	background-color: #bfbfbf;
+	width: 70px;
+	margin-top: -12px;
+	margin-bottom: -12px;
+	border-radius: 12px;
+
+}
+
+
+QSlider::add-page:horizontal:disabled 
+{
+	background-color: #bfbfbf;
+	width: 70px;
+	margin-top: -12px;
+	margin-bottom: -12px;
+	border-radius: 12px;
+
+}
+
+
+QSlider::handle:horizontal:disabled 
+{
+	background-color: #bfbfbf;
+	width: 70px;
+	margin-top: -12px;
+	margin-bottom: -12px;
+	border-radius: 12px;
+
+}</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::TicksBothSides</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_8">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>92</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>0m</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_9">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>╹</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_10">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>78</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>╹</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_11">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>200m</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_12">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>78</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>╹</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_13">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>400m</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_14">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>78</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>╹</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_15">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>600m</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_16">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>78</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>╹</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_17">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>800m</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_18">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>78</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>╹</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_19">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>1000m</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_20">
+     <property name="geometry">
+      <rect>
+       <x>1290</x>
+       <y>78</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>╹</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_21">
+     <property name="geometry">
+      <rect>
+       <x>1280</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>1200m</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_22">
+     <property name="geometry">
+      <rect>
+       <x>1540</x>
+       <y>78</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>╹</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_23">
+     <property name="geometry">
+      <rect>
+       <x>1530</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>1400m</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_24">
+     <property name="geometry">
+      <rect>
+       <x>1810</x>
+       <y>78</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>╹</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sensor_verileri_title_25">
+     <property name="geometry">
+      <rect>
+       <x>1790</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #848484;
+}</string>
+     </property>
+     <property name="text">
+      <string>1600m</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="graph_monitorize">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>560</y>
+      <width>671</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="hiz_graph_tab">
+     <attribute name="title">
+      <string>Hız Grafiği</string>
+     </attribute>
+     <widget class="PlotWidget" name="hizPlotAnlik">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>20</y>
+        <width>131</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="PlotWidget" name="hizPlotGecmis">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>521</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hiz_grafigi_limit_5">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hiz_grafigi_limit_20">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>20</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hiz_grafigi_limit_90">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>90</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hiz_grafigi_limit_150">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>150</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hiz_grafigi_limit_350">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>350</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hiz_grafigi_limit_45">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>45</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ivme_graph_tab">
+     <attribute name="title">
+      <string>İvme Grafiği</string>
+     </attribute>
+     <widget class="QPushButton" name="baglantiyi_kes_8">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>20</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="baglantiyi_kes_9">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>90</string>
+      </property>
+     </widget>
+     <widget class="PlotWidget" name="hizPlotAnlik_2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>20</y>
+        <width>131</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="baglantiyi_kes_10">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>150</string>
+      </property>
+     </widget>
+     <widget class="PlotWidget" name="hizPlotGecmis_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>521</width>
+        <height>201</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="baglantiyi_kes_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>350</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="baglantiyi_kes_12">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="baglantiyi_kes_13">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>230</y>
+        <width>92</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(84, 84, 84, 255),stop:1 rgba(59, 59, 59, 255));
+	color: #ffffff;
+	min-width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: #051a39;
+	padding: 5px;
+
+}
+
+
+QPushButton::flat
+{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+
+}
+
+
+QPushButton::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: rgba(183, 134, 32, 20%);
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #b78620;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(74, 74, 74, 255),stop:1 rgba(49, 49, 49, 255));
+	border: 1px solid #222;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>45</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="exitButton">
+    <property name="geometry">
+     <rect>
+      <x>1810</x>
+      <y>20</y>
+      <width>92</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <zorder>monitorize</zorder>
+   <zorder>kontrol</zorder>
+   <zorder>acil_durdurma</zorder>
+   <zorder>bufferInfoBox</zorder>
+   <zorder>bufferInfoBox_2</zorder>
+   <zorder>kapsulKonumBox</zorder>
+   <zorder>kamera_monitorize</zorder>
+   <zorder>graph_monitorize</zorder>
+   <zorder>exitButton</zorder>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

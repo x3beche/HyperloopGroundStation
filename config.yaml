@@ -1,0 +1,9 @@
+communication:
+  IP: "localhost"
+  PORT: 6644
+  HEADER: 128
+  FORMAT: "utf-8"
+  DISCONNECT_MESSAGE: "d1sc0nn3ct"
+  AUTHENTICATION_KEY: "change_here_for_secure_communication"
+
+logging_idendity: "HMSLogger"
