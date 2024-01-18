@@ -1,5 +1,5 @@
 # HyperLoop Ground Station
-I used PyQT for GUI and SOCKET protocol for communication.
+I used PyQT for GUI and SOCKET protocol for communication.<p>&nbsp;</p>
 If you want to see it on action : [youtube](https://www.youtube.com/watch?v=dRoxK93ffNY)
 
 <p>&nbsp;</p>
